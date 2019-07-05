@@ -1,0 +1,38 @@
+{
+  "name": "theham",
+  "version": "1.0.0",
+  "description": "The Ham on GULP and SCSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/anjest13/theham.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/anjest13/theham/issues"
+  },
+  "homepage": "https://gitlab.com/anjest13/theham#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-terser": "^1.1.7",
+    "imagemin": "^6.1.0"
+  },
+  "dependencies": {
+    "gulp-imagemin": "^6.0.0"
+  }
+}
