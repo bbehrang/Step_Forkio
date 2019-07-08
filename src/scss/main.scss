@@ -1,12 +1,4 @@
+@import "reset";
 @import "variables";
-
-.section-title {
-    color: $main-color;
-}
-.h2 {
-    background-color: aqua;
-    color: $main-color;
-}
-.container {
-    background-color: cyan;
-}
+@import "components/components";
+@import "sections/sections";
