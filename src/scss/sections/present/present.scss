@@ -1,0 +1,61 @@
+.topButtonBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  margin: -33px 0 55px;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.28571428;
+}
+.present-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.present__button {
+  margin: 0 0 16px;
+  height: 62px;
+  padding: 17px;
+  min-width: 390px;
+  color: #fff;
+  background-color: #8d81ac;
+  border: none;
+  border-radius: 30px;
+  font-family: Montserrat, sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 20.45px;
+  outline: none;
+  cursor: pointer;
+}
+.present__subtitle{
+  color: #848e97;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 15px;
+}
+.present-content__title{
+  color: #635c73;
+  font-family: Montserrat,sans-serif;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 20.45px;
+  text-transform: uppercase;
+}
+.present-content__subtitle{
+  padding-top: 50px;
+  max-width: 900px;
+  color: #323232;
+  font-family: Lato, sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.present-content__gitButtons {
+  padding: 30px 0 50px;
+}
