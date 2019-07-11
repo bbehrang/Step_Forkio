@@ -103,7 +103,7 @@
       border-radius: 40px;
       line-height: 26px;
       border: none;
-      padding: 8px 40px;
+      padding: 14px 40px;
       font-family: Montserrat, sans-serif;
       font-size: 15px;
       font-weight: 400;
@@ -127,3 +127,64 @@
     margin-bottom: 7px;
   }
 }
+@media only screen and (min-width: $screen-sm + 1) and (max-width: $screen-md){
+
+  .price{
+    &-title{
+      font-size:32px;
+      margin-bottom:40px;
+    }
+    &-container{
+      padding: 70px 0;
+    }
+    &-block{
+      flex-wrap:wrap;
+      &__item{
+        width: 46%;
+      }
+      &__line{
+        top: 54%;
+      }
+
+    }
+  }
+  .recommended{
+    width: 48%;
+  }
+  .recommended .price-block__caption{
+    padding: 30px 0 40px;
+  }
+
+}
+@media only screen and (min-width: $screen-xs + 1) and (max-width: $screen-sm){
+
+  .price{
+    &-title{
+      font-size:28px;
+      line-height: 42px;
+      margin-bottom:0px;
+    }
+    &-container{
+      padding: 70px 0;
+    }
+    &-block{
+      flex-wrap:wrap;
+      &__item{
+        width: 90%;
+        margin: 10px 0;
+      }
+      &__line{
+        top: 54%;
+      }
+
+    }
+  }
+  .recommended{
+    width: 100%;
+  }
+  .recommended .price-block__caption{
+    padding: 30px 0 40px;
+  }
+
+}
+

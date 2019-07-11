@@ -1,10 +1,13 @@
 .features {
   background-color: #f4f4f4;
+  overflow: hidden;
 }
 .row {
   padding-top: 80px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 .leftBlock {
   display: flex;
@@ -34,6 +37,7 @@
     line-height: 21px;
     padding-top: 15px;
   }
+
 }
 .rightBlock {
   display: flex;
@@ -41,6 +45,7 @@
   align-content: flex-start;
   flex-direction: column;
   width: 50%;
+  position: relative;
   &__title {
     color: #8d81ac;
     font-family: Montserrat, sans-serif;
@@ -48,7 +53,46 @@
     font-weight: 700;
     line-height: 20.45px;
   }
-  &__img {
-    padding-top: 50px;
+
+  &__img-container {
+    flex-basis: 50%;
+    position: relative;
+    min-height: 10px;
+    & img{
+      position: absolute;
+      top:-80px;
+      left:0;
+    }
+  }
+}
+@media only screen and (min-width: $screen-md + 1) and (max-width: $screen-lg){
+  .rightBlock{
+    flex-grow: 1;
+    &__title{
+      font-size:41px;
+    }
+  }
+  .leftBlock{
+    flex-grow: 1;
+    &__caption{
+      font-size:12px;
+    }
+  }
+}
+@media only screen and (min-width: $screen-sm + 1) and (max-width: $screen-md){
+  .rightBlock__title{
+    order: -1;
+    font-size: 38px;
+    padding-bottom:40px
+  }
+  .leftBlock__item{
+    flex-basis: 100%;
+  }
+  .rightBlock__img-container{
+    order:1;
+    flex-basis: 100%;
+  }
+  .rightBlock__img-container img{
+    position: static;
   }
 }
