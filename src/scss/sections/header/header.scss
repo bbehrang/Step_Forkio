@@ -35,4 +35,33 @@
       padding-top: 20px;
     }
   }
+  @media only screen and (min-width: $screen-sm + 1) and (max-width: $screen-md) {
+    &-content{
+      &__title{
+        font-size:72px;
+      }
+      &__subtitle{
+        font-size: 19px;
+        text-align: center;
+      }
+      &__caption{
+        font-size:14px;
+      }
+    }
+  }
+  @media only screen and (min-width: $screen-xs + 1) and (max-width: $screen-sm) {
+    &-content{
+      &__title{
+        font-size:48px;
+      }
+      &__subtitle{
+        font-size: 18px;
+        text-align: center;
+      }
+      &__caption{
+        font-size:14px;
+      }
+    }
+  }
+
 }

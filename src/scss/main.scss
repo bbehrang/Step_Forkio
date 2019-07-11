@@ -1,20 +1,27 @@
 @import "reset";
 
-html {
-  height: 100%;
+a{
+  text-decoration: none;
+}
+#wrapper{
   width: 100%;
 }
-body {
-  height: 100%;
-  width: 100%;
+
+.hamburger-menu{
+  display: none;
+  &__bars{
+    background-color: white;
+    border-radius: 4px;
+    width: 27px;
+    margin-bottom:6px;
+    height: 3px;
+    &--shorter{
+      width: 21px;
+    }
+  }
+
 }
-#wrapper {
-  width: 100%;
-  height: 100%;
-  display: table;
-  overflow: hidden;
-  table-layout: fixed;
-}
+
 @import "variables";
 @import "components/components";
 @import "sections/sections";

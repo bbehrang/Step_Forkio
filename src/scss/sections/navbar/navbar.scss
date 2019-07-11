@@ -60,4 +60,50 @@
       outline: none;
     }
   }
+  @media only screen and (min-width: $screen-lg){
+    &-menu{
+      flex-grow: 1;
+      justify-content: flex-end;
+    }
+  }
+  @media only screen and (min-width: $screen-md + 1) and (max-width: $screen-lg){
+    &-menu{
+      flex-grow: 1;
+      justify-content: flex-end;
+    }
+  }
+  @media only screen and (min-width: $screen-sm + 1) and (max-width: $screen-md) {
+    &-content{
+      flex-wrap: wrap;
+    }
+    &-title{
+      order : 1;
+    }
+    &-menu__button {
+      order: 2;
+    }
+    &-menu{
+      flex-basis: 100%;
+      order: 3;
+      margin-top: 17px;
+      &__link{
+        font-size:14px;
+      }
+    }
+  }
+  @media only screen and (min-width: $screen-xs + 1) and (max-width: $screen-sm) {
+    &-title__text{
+      display: none;
+    }
+    &-menu{
+      display: none;
+    }
+    .hamburger-menu{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      order:1;
+    }
+  }
+
 }
