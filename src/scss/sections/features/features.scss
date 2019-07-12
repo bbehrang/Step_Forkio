@@ -12,11 +12,16 @@
 .leftBlock {
   display: flex;
   flex-direction: column;
+  flex-basis: 48%;
   &__item {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: flex-start;
     padding-bottom: 40px;
+    flex-basis: 48%;
+  }
+  &__img{
+    flex-basis: 20%;
   }
   &__description {
     max-width: 350px;
@@ -73,17 +78,60 @@
     }
   }
   .leftBlock{
-    flex-grow: 1;
+    flex-grow: 0;
+    flex-basis: 48%;
     &__caption{
       font-size:12px;
+    }
+    &__img{
+      flex-basis: 20%;
     }
   }
 }
 @media only screen and (min-width: $screen-sm + 1) and (max-width: $screen-md){
+  .leftBlock{
+    flex-grow: 1;
+    align-items: center;
+    &__img{
+      flex-basis: 24%;
+    }
+  }
   .rightBlock__title{
     order: -1;
-    font-size: 38px;
+    font-size: 36px;
     padding-bottom:40px
+  }
+  .leftBlock__item{
+    flex-basis: 100%;
+  }
+  .rightBlock__img-container{
+    order:1;
+    flex-basis: 100%;
+  }
+  .rightBlock__img-container img{
+    position: static;
+  }
+}
+@media only screen and (min-width: $screen-xs + 1) and (max-width: $screen-sm) {
+  .leftBlock{
+    flex-grow: 1;
+  }
+  .rightBlock__title{
+    order: -1;
+    font-size: 28px;
+    line-height: 38px;
+    padding-bottom:40px;
+    text-align: center;
+  }
+  .leftBlock__item{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .leftBlock__description{
+    flex-basis: 100%;
+    padding:0;
+    text-align: center;
+    margin-top:20px;
   }
   .leftBlock__item{
     flex-basis: 100%;

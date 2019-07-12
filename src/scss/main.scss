@@ -15,6 +15,7 @@ a{
     width: 27px;
     margin-bottom:6px;
     height: 3px;
+    transition: all 200ms ease-in;
     &--shorter{
       width: 21px;
     }
