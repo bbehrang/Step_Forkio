@@ -16,14 +16,36 @@
   opacity: 0;
   z-index: 2;
   &__items{
-    padding: 34px 0;
     border-bottom: 1px solid #3b3b3b;
+    position: relative;
+    color: #fff;
+    &::before{
+      content: '';
+      display: block;
+      width: 8px;
+      height: 53px;
+      position: absolute;
+      left:0;
+      top:0;
+      bottom: 0;
+      margin: auto;
+      background-color: $main-color;
+      opacity: 0;
+      transition: 200ms ease-in;
+    }
+    &:hover::before{
+      opacity: 1;
+    }
+    &:hover{
+      color: $main-color;
+    }
   }
   &__links{
-    color:white;
-    font-size:26px;
-    padding-left: 30px;
-
+    color: inherit;
+    font-size: 26px;
+    display: inline-block;
+    width: 100%;
+    padding: 30px 30px;
   }
 }
 .navbar {
