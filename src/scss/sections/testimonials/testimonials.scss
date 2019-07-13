@@ -3,7 +3,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: #4a3b4e;
   &-title {
     text-align: center;
     color: #ffffff;
@@ -19,6 +19,8 @@
   justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: row;
+  position: relative;
+
   &__item {
     width: 33%;
     text-align: center;
@@ -41,6 +43,14 @@
   text-align: center;
   width: 857px;
   padding-bottom: 50px;
+  &::after{
+    content: '';
+    display: block;
+    width: 80%;
+    height: 2px;
+    background-color: #645766;
+    margin:18px auto 0;
+  }
   &__caption {
     color: #a291a5;
     font-family: Lato, sans-serif;
@@ -56,7 +66,7 @@
 }
 @media only screen and (min-width: $screen-sm + 1) and (max-width: $screen-md){
   .testimonials{
-    background-attachment: fixed;
+
     &-title{
       font-size: 28px;
     }
@@ -83,7 +93,6 @@
 }
 @media only screen and (min-width: $screen-xs + 1) and (max-width: $screen-sm) {
   .testimonials{
-    background-attachment: fixed;
     &-title{
       font-size: 36px;
       line-height: 48px;
@@ -105,6 +114,10 @@
     }
   }
   .review-footer{
-    display: none;
+    width: 90%;
+    margin: 0 auto;
+    &__caption{
+      display: none;
+    }
   }
 }
