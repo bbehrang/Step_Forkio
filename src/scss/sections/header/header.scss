@@ -50,7 +50,7 @@
       }
     }
   }
-  @media only screen and (min-width: $screen-xs + 1) and (max-width: $screen-sm) {
+  @media only screen and (max-width: $screen-sm) {
     &-content{
       &__title{
         font-size:48px;
