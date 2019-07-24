@@ -59,11 +59,7 @@
     line-height: 21px;
   }
 }
-@media only screen and (min-width: $screen-md + 1) and (max-width: $screen-lg){
-  .testimonials{
-    background-attachment: fixed;
-  }
-}
+
 @media only screen and (min-width: $screen-sm + 1) and (max-width: $screen-md){
   .testimonials{
 
@@ -91,7 +87,7 @@
     }
   }
 }
-@media only screen and (min-width: $screen-xs + 1) and (max-width: $screen-sm) {
+@media only screen and (max-width: $screen-sm) {
   .testimonials{
     &-title{
       font-size: 36px;

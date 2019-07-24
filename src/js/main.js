@@ -1,5 +1,7 @@
 
-function showMenu(menu, bars, opened){
+function toggleMenu(menu, bars, opened){
+    console.log("here");
+    console.log(menu);
     $(menu).css('display', 'block');
     $(bars).eq(1).css('opacity', (opened == 0 ? '0' : '1'));
 
@@ -15,9 +17,8 @@ function showMenu(menu, bars, opened){
         }});
     return (opened == 0 ? 1 : 0);
 }
-
 $(document).ready(function(e){
     $('.hamburger-menu').on('click', function(e){
-        $(this).attr('data-clicked', showMenu('.mobile-menu', '.hamburger-menu__bars', $(this).attr('data-clicked')));
+        $(this).attr('data-clicked', toggleMenu('.navbar-menu', '.hamburger-menu__bars', $(this).attr('data-clicked')));
     });
 });
